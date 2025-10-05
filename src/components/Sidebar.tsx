@@ -5,8 +5,6 @@ import { Separator } from "./ui/separator";
 import {
     Home,
     Activity,
-    BarChart3,
-    Brain,
     Settings,
     User,
     Trophy,
@@ -68,7 +66,7 @@ export function Sidebar({ activeView, onViewChange }: SidebarProps) {
     );
 
     return (
-        <div className={`bg-sidebar border-r border-sidebar-border h-screen flex flex-col transition-all duration-300 sticky top-0 left-0 ${isCollapsed ? 'w-16' : 'w-64'
+        <div className={`bg-sidebar border-r border-sidebar-border min-h-screen h-full flex flex-col transition-all duration-300 sticky top-0 left-0 ${isCollapsed ? 'w-16' : 'w-64'
             }`}>
             {/* Header */}
             <div className="p-4 border-b border-sidebar-border">

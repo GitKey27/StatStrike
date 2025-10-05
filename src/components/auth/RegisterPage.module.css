@@ -1,0 +1,36 @@
+.registerPageWrapper { position: relative; width: 100vw; height: 100vh; background: #000; overflow: hidden; }
+.registerPageBackground { position: absolute; inset: 0; background: linear-gradient(to bottom, #7a0f15 0%, #7a0f15 10%, #000 50%, #000 100%); }
+
+.registerPageContainer { position: relative; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; width: 100%; height: 100%; padding: 36px 40px 40px; color: #fff; align-items: center; }
+
+.registerPageFormSection { align-self: center; }
+.registerPageFormTitle { font-size: 28px; margin: 0 0 18px; }
+.registerPageLeadTitle { font-weight: 700; margin: 0 0 8px; }
+.registerPageLeadSubtitle { opacity: 0.85; margin: 0 0 28px; max-width: 760px; }
+
+.registerPageFormContainer { display: grid; gap: 20px; }
+.registerPageFormRow { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.registerPageFormRowSingle { display: grid; grid-template-columns: 1fr; }
+.registerPageFormField { display: grid; gap: 8px; }
+.registerPageFormFieldLabel { font-size: 14px; opacity: 0.9; }
+.registerPageFormFieldInput { background: #4b0010; color: #fff; border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 14px 14px; outline: none; }
+.registerPageFormFieldInput::placeholder { color: rgba(255,255,255,0.75); }
+
+.registerPageSubmitButton { margin-top: 10px; width: 230px; padding: 16px 18px; border-radius: 14px; border: none; cursor: pointer; color: #fff; font-weight: 700; background: linear-gradient(180deg, #a3161d 0%, #5a0e12 100%); box-shadow: 0 10px 24px rgba(163,22,29,0.35); transition: transform .15s ease, opacity .15s ease; text-decoration: none; text-align: center; display: block; }
+.registerPageSubmitButton:hover { transform: translateY(-1px); opacity: .95; }
+
+.registerPageHelperText { margin-top: 18px; color: rgba(255,255,255,0.85); }
+.registerPageLink { color: #4ea1ff; text-decoration: none; }
+.registerPageLink:hover { text-decoration: underline; }
+
+.registerPageBrandSection { position: relative; display: grid; align-content: center; justify-items: center; }
+.registerPageLogoContainer { width: 520px; height: 520px; border-radius: 9999px; background: rgba(0,0,0,0.35); display: grid; place-items: center; overflow: hidden; }
+.registerPageLogoImage { width: 95%; height: auto; object-fit: contain; }
+.registerPageBrandText { margin-top: 24px; display: flex; align-items: center; gap: 12px; }
+.registerPageBrandIcon { font-size: 22px; }
+.registerPageBrandName { letter-spacing: .35em; font-size: 54px; font-weight: 800; font-style: italic; }
+
+@media (max-width: 1100px) {
+  .registerPageContainer { grid-template-columns: 1fr; padding: 24px; }
+  .registerPageBrandSection { display: none; }
+}
